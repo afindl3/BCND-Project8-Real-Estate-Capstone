@@ -4,7 +4,39 @@
 * SolnSquareVerifier: https://rinkeby.etherscan.io/address/0x906f1983026fbaf7d62717e608f500c8719b13db
 * SolnSquareVerifier Contract ABI (note this file is a copy of the file generated after running truffle compile in eth-contracts/build/contracts/SolnSquareVerifier.json abi array): https://github.com/afindl3/BCND-Project8-Real-Estate-Capstone/blob/feature/project-updates/soln-square-verifier-abi.txt
 * OpenSea Marketplace: https://rinkeby.opensea.io/category/unidentified-contract-v386/
+* 10 tokens were minted using Account1: 0x4EA55452B992b81C95f2077c15C09aCa1c6Fdaed
+* 5 tokens were put on sale by Account1: 0x4EA55452B992b81C95f2077c15C09aCa1c6Fdaed
+* The same 5 tokens were purchased by Account2: 0xBD75FB68308cA7712Dcfc04884931d5797079140
 * For further details, please view the steps followed in: https://github.com/afindl3/BCND-Project8-Real-Estate-Capstone/blob/master/Project%208%20-%20Real%20Estate%20Capstone.docx
+
+# Project Setup
+
+## Install
+
+To install, download or clone the repo, then:
+
+    npm install
+    cd eth-contracts/
+    truffle compile
+    
+## Test
+
+To run truffle tests run the following commands from the /eth-contracts folder:
+
+    truffle test ./test/ERC721Mintable.js
+    truffle test ./test/TestSquareVerifier.js
+    truffle test ./test/TestSolnSquareVerifier.js
+    
+## Deploying
+
+Create a .mnemonic-secret and .infura-secret file in the root of /eth-contracts with your menmonic and infura key respectively:
+
+    truffle compile
+    truffle migrate --rest --network rinkeby
+
+## Zokrates
+
+Refer to the [Zokrates howto](./zokrates/howto.md)
 
 # Udacity Blockchain Capstone
 
